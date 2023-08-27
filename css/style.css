@@ -8,6 +8,9 @@ header{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
+#iconbar{
+    display: none;
+}
 /* nav related part */
 nav{
     display: flex;
@@ -67,4 +70,33 @@ ul > li > a{
     font-size: 20px;
     font-weight: 700;
     color: #FD6E0A;
+}
+
+
+@media screen and (max-width:750px) {
+    #iconbar{
+        display: block;
+        font-size: 40px;
+        color: #FD6E0A;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 70px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+    }
+    .open{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: block;
+    }
+    .menu li{
+        margin-top: 25px;
+    }
 }
